@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="anime.js"></script>
+
+  <script>
+    window.addEventListener("load", () => {
+      const btn = document.querySelector("button");
+      const box = document.querySelector("box");
+
+      btn.addEventListener("click", () => {
+        new Anim(box, {
+          prop: 'margin-left',
+          value: 500,
+          duration: 1000,
+          callback: () => {
+            new Anim(box, {
+              prop: "margin-top",
+              value: 200,
+              duration: 1000,
+            })
+          }
+        })
+      })
+    })
+  </script>
+</head>
+<button>button</button>
+
+<section>
+  <div id="box"></div>
+</section>
+
+<body>
+
+</body>
+
+</html>
