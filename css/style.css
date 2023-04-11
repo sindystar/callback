@@ -192,4 +192,28 @@ body aside .inner .content .btnClose {
   right: 40px;
 }
 
+@media screen and (max-width: 639px) {
+  body main .txt {
+    width: 80vw;
+  }
+  body footer ul {
+    margin-bottom: 10px;
+  }
+  body footer ul li {
+    margin-right: 30px;
+  }
+  body aside .inner .pic {
+    width: 50%;
+  }
+  body aside .inner .content {
+    width: 100%;
+  }
+  body aside .inner .content h2 {
+    font-size: 10vw;
+  }
+  body aside .inner .content p {
+    font-size: 12px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
