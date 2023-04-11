@@ -165,7 +165,8 @@ body aside .inner {
   position: absolute;
   top: 0px;
   left: 0px;
-  opacity: 50px;
+  opacity: 0;
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
